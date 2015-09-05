@@ -1,17 +1,31 @@
 {
+  "author": "Diogo Pais <dpais11@gmail.com> (https://github.com/Makay11)",
   "name": "live-front",
-  "version": "1.0.0",
   "description": "live-front",
+  "keywords": [
+    "coffeescript",
+    "cson",
+    "front-matter",
+    "json",
+    "livescript",
+    "lson"
+  ],
+  "version": "1.0.0",
+  "license": "ISC",
+  "homepage": "https://github.com/Makay11/live-front",
+  "bugs": "https://github.com/Makay11/live-front/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Makay11/live-front"
+  },
   "main": "index.js",
   "scripts": {
     "checks": "npm run jshint && npm test",
-    "dev": "npm run watch",
     "jshint": "jshint .",
+    "start": "npm run watch",
     "test": "jasmine",
     "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm run checks"
   },
-  "author": "Makay11",
-  "license": "ISC",
   "dependencies": {
     "bluebird": "^2.9.34",
     "lson": "^1.0.3"
@@ -20,13 +34,5 @@
     "jasmine": "^2.3.2",
     "jshint": "^2.8.0",
     "nodemon": "^1.4.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Makay11/live-front"
-  },
-  "bugs": {
-    "url": "https://github.com/Makay11/live-front/issues"
-  },
-  "homepage": "https://github.com/Makay11/live-front"
+  }
 }
