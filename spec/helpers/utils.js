@@ -2,10 +2,6 @@
 
 var fs = require("fs");
 
-var debugFlag = "live-front";
-
-process.env.DEBUG = process.env.DEBUG ? process.env.DEBUG + "," + debugFlag : debugFlag;
-
 var utils = global.utils = {};
 
 utils.lf = require("../../index");
