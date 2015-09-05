@@ -4,7 +4,8 @@
   "description": "live-front",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "watch": "nodemon -x npm test"
   },
   "author": "Makay11",
   "license": "ISC",
@@ -13,7 +14,8 @@
     "lson": "^1.0.3"
   },
   "devDependencies": {
-    "jasmine": "^2.3.2"
+    "jasmine": "^2.3.2",
+    "nodemon": "^1.4.1"
   },
   "repository": {
     "type": "git",

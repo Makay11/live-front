@@ -1,9 +1,7 @@
 "use strict";
 
 module.exports = parse;
-
 module.exports.parse = parse;
-
 module.exports.parseFile = parseFile;
 
 var LSON = require("lson");
@@ -13,7 +11,11 @@ var readFile = Promise.promisify(require("fs").readFile);
 
 var regex = /^---\s*^((?:.|\s)*)\s^---\s*^/m;
 
-function parse(data) {
+function parse(data, encoding) {
+  if (Buffer.isBuffer(data)) {
+    data = data.toString(encoding || "utf-8");
+  }
+
   var lson = null;
 
   data = data.replace(regex, function (match, capture) {

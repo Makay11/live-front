@@ -1,9 +1,9 @@
 "use strict";
 
+var fs = require("fs");
+
 var utils = global.utils;
-
 var lf = utils.lf;
-
 var testFiles = utils.testFiles;
 
 describe("this module", function () {
@@ -20,6 +20,48 @@ describe("the 'parse' function", function () {
 
   it("should be the default function", function () {
     expect(lf).toEqual(lf.parse);
+  });
+
+  it("should correctly parse the first test file's contents (.jade)", function (done) {
+    lf.parse(fs.readFileSync(testFiles[0])).then(function (result) {
+      expect(result.object).toEqual({
+        a: 1
+      });
+
+      expect(result.fileContent.trimRight()).toEqual("h1 Test 1");
+
+      done();
+    }).catch(function (error) {
+      done.fail(error.toString());
+    });
+  });
+
+  it("should correctly parse the second test file's contents (.html)", function (done) {
+    lf.parse(fs.readFileSync(testFiles[1])).then(function (result) {
+      expect(result.object).toEqual({
+        a: {
+          b: "hi",
+          c: [
+            {
+              d: 1
+            }, 2, "3", {
+              e: {
+                f: 4,
+                g: 5
+              },
+              h: ["6", 7, [8, 9]]
+            }
+          ]
+        },
+        i: "hey"
+      }); // compiled using LiveScript's online compiler at livescript.net
+
+      expect(result.fileContent.trimRight()).toEqual("<h1>Test 2</h1>");
+
+      done();
+    }).catch(function (error) {
+      done.fail(error.toString());
+    });
   });
 
 });
