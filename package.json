@@ -1,7 +1,7 @@
 {
   "name": "live-front",
   "version": "1.0.0",
-  "description": "",
+  "description": "live-front",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "jasmine": "^2.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Makay11/live-front"
+  },
+  "bugs": {
+    "url": "https://github.com/Makay11/live-front/issues"
+  },
+  "homepage": "https://github.com/Makay11/live-front"
 }
