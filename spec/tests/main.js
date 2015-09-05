@@ -52,19 +52,17 @@ describe("the 'parseFile' function", function () {
           c: [
             {
               d: 1
-            },
-            2,
-            "3",
-            {
+            }, 2, "3", {
               e: {
                 f: 4,
                 g: 5
-              }
+              },
+              h: ["6", 7, [8, 9]]
             }
           ]
         },
-        h: "hey"
-      });
+        i: "hey"
+      }); // compiled using LiveScript's online compiler at livescript.net
 
       expect(result.fileContent.trimRight()).toEqual("<h1>Test 2</h1>");
 
