@@ -1,7 +1,7 @@
 {
   "author": "Diogo Pais <dpais11@gmail.com> (https://github.com/Makay11)",
   "name": "live-front",
-  "description": "live-front",
+  "description": "Extract LSON, CSON or JSON from the header of any file. Inspired by front-matter.",
   "keywords": [
     "coffeescript",
     "cson",
