@@ -8,7 +8,7 @@
     "dev": "npm run watch",
     "jshint": "jshint .",
     "test": "jasmine",
-    "watch": "nodemon --delay 1 -x npm run checks"
+    "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm run checks"
   },
   "author": "Makay11",
   "license": "ISC",
