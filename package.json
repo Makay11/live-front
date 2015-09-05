@@ -4,8 +4,11 @@
   "description": "live-front",
   "main": "index.js",
   "scripts": {
+    "checks": "npm run jshint && npm test",
+    "dev": "npm run watch",
+    "jshint": "jshint .",
     "test": "jasmine",
-    "watch": "nodemon -x npm test"
+    "watch": "nodemon -x npm run checks"
   },
   "author": "Makay11",
   "license": "ISC",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "jasmine": "^2.3.2",
+    "jshint": "^2.8.0",
     "nodemon": "^1.4.1"
   },
   "repository": {
