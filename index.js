@@ -9,7 +9,7 @@ var Promise = require("bluebird");
 
 var readFile = Promise.promisify(require("fs").readFile);
 
-var regex = /^---\s*^((?:.|\s)*)\s^---\s*?\r?\n?(?:^|$)/m;
+var regex = /^---\s*\r?\n((?:.|\s)*)\r?\n---\s*?\r?(?:\n|$)/;
 
 function parse(data, encoding) {
   if (Buffer.isBuffer(data)) {
