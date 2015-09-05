@@ -1,10 +1,15 @@
 {
   "curly": true,
   "eqeqeq": true,
+  "eqnull": true,
   "globalstrict": true,
   "jasmine": true,
+  "latedef": "nofunc",
+  "nocomma": true,
   "node": true,
-  "quotmark": "double",
+  "nonbsp": true,
+  "nonew": true,
+  "singleGroups": true,
   "undef": true,
   "unused": true
 }
