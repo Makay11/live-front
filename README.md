@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/live-front.svg)](https://www.npmjs.com/package/live-front)
 [![License](https://img.shields.io/npm/l/live-front.svg)](http://opensource.org/licenses/ISC)
+[![Build Status](https://travis-ci.org/Makay11/live-front.svg?branch=master)](https://travis-ci.org/Makay11/live-front)
 [![Dependency Status](https://david-dm.org/Makay11/live-front.svg)](https://david-dm.org/Makay11/live-front)
 [![devDependency Status](https://david-dm.org/Makay11/live-front/dev-status.svg)](https://david-dm.org/Makay11/live-front#info=devDependencies)
 [![Codacy Badge](https://api.codacy.com/project/badge/6b32fa860d80401fb61184984617b30b)](https://www.codacy.com/app/dpais11_2338/live-front)
