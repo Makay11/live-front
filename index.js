@@ -25,7 +25,7 @@ function parse(data, encoding) {
 
   return Promise.resolve({
     object: lson,
-    fileContent: data
+    body: data
   });
 }
 

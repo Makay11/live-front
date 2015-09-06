@@ -16,7 +16,7 @@ describe("the 'parseFile' function", function () {
         a: 1
       });
 
-      expect(result.fileContent.trimRight()).toEqual("h1 Test 1");
+      expect(result.body.trimRight()).toEqual("h1 Test 1");
 
       done();
     }).catch(function (error) {
@@ -44,7 +44,7 @@ describe("the 'parseFile' function", function () {
         i: "hey"
       }); // compiled using LiveScript's online compiler at livescript.net
 
-      expect(result.fileContent.trimRight()).toEqual("<h1>Test 2</h1>");
+      expect(result.body.trimRight()).toEqual("<h1>Test 2</h1>");
 
       done();
     }).catch(function (error) {
@@ -56,7 +56,7 @@ describe("the 'parseFile' function", function () {
     lf.parseFile(testFiles[2]).then(function (result) {
       expect(result.object).toEqual(null);
 
-      expect(result.fileContent.trimRight()).toEqual("p Test 3");
+      expect(result.body.trimRight()).toEqual("p Test 3");
 
       done();
     }).catch(function (error) {
