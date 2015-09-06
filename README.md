@@ -1,6 +1,7 @@
 # live-front
 
 [![npm version](https://badge.fury.io/js/live-front.svg)](http://badge.fury.io/js/live-front)
+[![Dependency Status](https://david-dm.org/Makay11/live-front.svg)](https://david-dm.org/Makay11/live-front)
 
 **live-front** is inspired by [front-matter](https://www.npmjs.com/package/front-matter) and works in a similar fashion, except it uses LSON as the object format, which allows much more complex data structures (i.e. nested objects, arrays, strings, numbers and **functions**).
 
