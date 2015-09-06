@@ -20,11 +20,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "checks": "npm run jshint && npm test",
+    "jasmine": "jasmine",
     "jshint": "jshint .",
     "start": "npm run watch",
-    "test": "jasmine",
-    "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm run checks"
+    "test": "npm run jshint && npm run jasmine",
+    "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm test"
   },
   "dependencies": {
     "bluebird": "^2.9.34",

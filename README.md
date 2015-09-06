@@ -71,7 +71,7 @@ Then you can do this:
 
 Feel free to [report bugs](https://github.com/Makay11/live-front/issues) or [fork](https://github.com/Makay11/live-front/fork) and open pull requests when possible.
 
-Please make sure that `npm run checks` doesn't report any issues before opening a pull request.
+Please make sure that `npm test` doesn't report any issues before opening a pull request.
 
 ### Contributors
 
