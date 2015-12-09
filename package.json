@@ -20,19 +20,19 @@
   },
   "main": "index.js",
   "scripts": {
-    "jasmine": "jasmine",
-    "jshint": "jshint .",
+    "coverage": "lab -r lcov",
     "start": "npm run watch",
-    "test": "npm run jshint && npm run jasmine",
-    "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm test"
+    "test": "npm run tests && npm run coverage",
+    "tests": "lab -L",
+    "watch": "nodemon --delay 1 --ext js,json,jade,html --exec npm run tests"
   },
   "dependencies": {
     "bluebird": "^2.9.34",
     "lson": "^1.0.3"
   },
   "devDependencies": {
-    "jasmine": "^2.3.2",
-    "jshint": "^2.8.0",
+    "code": "^1.5.0",
+    "lab": "^5.16.1",
     "nodemon": "^1.4.1"
   }
 }
